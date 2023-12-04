@@ -1,12 +1,12 @@
 {% set name = "nbwipers" %}
-{% set version = "0.1.0" %}
+{% set version = "0.2.0" %}
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 20afbc745f02dedc15fbd948c719b920615048a7fd52d667182770d49b0943b0
+  sha256: d405dec3e381a56b00fc34a24f8b5d1c214d511919af832fadbfc009b13a97bb
 
 build:
   number: 0
@@ -26,7 +26,7 @@ about:
   summary: nbwipers is a command line tool to wipe clean jupyter notebooks, written in Rust.
   license: MIT
   license_family: MIT
-  license_file: 
+  license_file:
     - LICENSE
     - THIRDPARTY.yml
 
