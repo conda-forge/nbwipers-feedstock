@@ -1,12 +1,12 @@
 {% set name = "nbwipers" %}
-{% set version = "0.3.3" %}
+{% set version = "0.3.4" %}
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 62f981815b7d9300a54cc66a92d4fd163bbe62c5ad1b633f6f5ada7a47dce4e3
+  sha256: b4168b1975c7be01809bb3da47343b8d37a91f6780098b8bfb5d7fee2bad0318
 
 build:
   number: 0
