@@ -1,12 +1,12 @@
 {% set name = "nbwipers" %}
-{% set version = "0.3.5" %}
+{% set version = "0.3.6" %}
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 98184a5b050b52a3f64a7b9c3d55f39454c38f1d10a5439f63b8baa548331da2
+  sha256: 909fb2ad3b64b9f7c046e8bbc47cc8eace52726d302f9a066e21b62df76ab644
 
 build:
   number: 0
@@ -15,6 +15,7 @@ requirements:
   build:
     - {{ compiler('rust') }}
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - cargo-bundle-licenses
 
 test:
